@@ -1,0 +1,26 @@
+{
+  "name": "QA tools",
+  "description": "An helper for creating QA feedback messages",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "assets/images/icon.png",
+    "48": "assets/images/icon.png",
+    "128": "assets/images/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "assets/js/background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "declarativeContent",
+    "tabs",
+    "https://*/rev.txt",
+    "http://*/rev.txt"
+  ]
+}
