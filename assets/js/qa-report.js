@@ -9,6 +9,11 @@ var QAReport = /** @class */ (function () {
         this._effort = 0.0;
         this._isPassed = true;
         this._servers = {
+            // DEVBOX
+            'http://sc.devbox.local': {
+                venture: 'DEVBOX',
+                environment: 'LOCAL'
+            },
             // LIVE SC
             'https://sellercenter.lamoda.ru': {
                 venture: 'LAMODA RU',

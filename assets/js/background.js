@@ -46,6 +46,9 @@ chrome.runtime.onInstalled.addListener(function () {
                     }),
                     new chrome.declarativeContent.PageStateMatcher({
                         pageUrl: {urlContains: 'https://master.sellercenter.net'},
+                    }),
+                    new chrome.declarativeContent.PageStateMatcher({
+                        pageUrl: {urlContains: 'http://sc.devbox.local'},
                     })
                 ],
                 // And shows the extension's page action.
